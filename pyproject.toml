@@ -1,0 +1,23 @@
+[project]
+name = "emojifav"
+version = "0.1.0"
+description = "导出 QQ / 微信 / 企业微信 中用户自己收藏的表情"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "cryptography>=42",
+]
+
+[project.scripts]
+emojifav = "emojifav.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["emojifav*"]
+
+[tool.setuptools.package-data]
+emojifav = ["_native/*.c", "_native/*.h"]

@@ -1,0 +1,26 @@
+# 导出的表情、清单和预览（含本机账号路径）
+exports/
+
+# 微信数据库密钥（--wechat-key-file）
+all_keys.json
+*keys*.json
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+
+# macOS
+.DS_Store
